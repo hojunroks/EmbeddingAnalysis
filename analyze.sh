@@ -10,3 +10,4 @@ python analyze.py --model MocoV2 --pca 10
 python analyze.py --model SimSiam --pca 10
 python analyze.py --model Supervised --pca 10
 python analyze.py --model Untrained --pca 10
+python analyze.py --model SimCLR --pretrain_dataset cifar10 --pca 10
