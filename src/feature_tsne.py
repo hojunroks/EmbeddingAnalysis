@@ -11,7 +11,7 @@ def featureToTSNE(features, labels, savePath):
     colors = ['gold','aquamarine','r','b','g','hotpink','aqua','mediumorchid','c','m','y','k','lightcoral','royalblue','greenyellow']
     cs_colors = [colors[labels[i]] for i in range(len(labels))]
     ids = [0,1,2,3,4,5,6,7,8,9]
-    label_names = ['airplane', 'bird', 'car', 'cat', 'deer', 'dog', 'horse', 'monkey', 'ship', 'truck']
+    label_names = ["airplane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
     fig = plt.figure()
     fig.set_figheight(20)
     fig.set_figwidth(30)

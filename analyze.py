@@ -53,6 +53,7 @@ def main():
         dm = CIFAR10DataModule(data_dir="data", batch_size=args.batch_size, num_workers=8)
         dm.prepare_data()
         dm.setup()
+        classNames = ["airplane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
     
 
     ###########################
@@ -186,10 +187,11 @@ def main():
     table_data = []
     for i in range(10):
         row_data = []
+        row_data.append(classNames[i])
         for j in range(10):
             row_data.append(cos(mean_features[i], mean_features[j]).item())
         table_data.append(row_data)
-    print(tabulate(table_data))
+    print(tabulate(table_data, headers=classNames))
 
     ##################################
     # VISUALIZING ENCODING VECTORS
