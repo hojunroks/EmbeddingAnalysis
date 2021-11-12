@@ -2,7 +2,7 @@ torch==1.7.1
 torchvision==0.8.2
 tensorboard==2.4.1
 pytorch-lightning
-pytorch-lightning-bolts
+lightning-bolts
 matplotlib==3.3.3
 pandas==1.2.1
 scikit-learn==0.24.1
